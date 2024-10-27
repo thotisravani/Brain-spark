@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <video autoplay loop muted class="background-video">
+        <source src="bdc1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="style">
+    <div id="message-box" class="modal">
+        <div class="modal-content">
+            <span id="close-btn" class="close">&times;</span>
+            <p id="message-text"></p>
+        </div>
+    </div>
+    <h1>Brain spark</h1>
+    <div>
+        <label>
+            <input type="radio" name="difficulty" value="easy" checked> Easy (4 pairs)
+        </label>
+        <label>
+            <input type="radio" name="difficulty" value="medium"> Medium (8 pairs)
+        </label>
+        <label>
+            <input type="radio" name="difficulty" value="hard"> Hard (12 pairs)
+        </label>
+    </div>
+    
+    <div id="game-board" class="game-board"></div>
+    <div id="score">Score: 0</div>
+    <div id="attempts">Attempts: 0 / 20</div>
+    <div id="timer">Time: 0s</div>
+    <button id="start-button">Start Game</button>
+    <button id="reset-button">Reset Game</button>
+    </div>  
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            color: white;
+            overflow: hidden; /* Prevent scrolling */
+        }
+        .background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        h1 {
+            margin: 20px;
+        }
+        .instructions {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .let-go-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none; /* Remove underline */
+        }
+        .let-go-button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <video class="background-video" autoplay loop muted>
+        <source src="bcg.mp4" type="video/mp4"> 
+        Your browser does not support the video tag.
+    </video>
+    
+    <h1>How to Play the Game</h1>
+    <div class="instructions">
+        <p>Welcome to the Memory Card Game! Your goal is to find pairs of matching cards. Follow the instructions below to get started:</p>
+        <ul>
+            <li><strong>Step 1:</strong> Click on any card to flip it over and reveal the image.</li>
+            <li><strong>Step 2:</strong> Click on a second card to flip it over.</li>
+            <li><strong>Step 3:</strong> If the two cards match, they will stay flipped over. If they don’t match, they will flip back after a short delay.</li>
+            <li><strong>Step 4:</strong> Keep flipping cards until all pairs are found!</li>
+            <li><strong>Step 5:</strong> Try to remember the positions of the cards to improve your chances of finding pairs.</li>
+        </ul>
+        <p>Good luck and have fun!</p>
+        <a href="hmo.html" class="let-go-button">Let's Go!</a>
+    </div>
+</body>
+</html>
